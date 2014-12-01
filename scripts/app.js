@@ -1,5 +1,6 @@
 angular.module('PixiPalace', [
   'ngRoute',
+  'ngTouch',
   'PixiPalace.Pixi',
   'PixiPalace.view1',
   'PixiPalace.view2'

@@ -13,18 +13,24 @@ angular.module('PixiPalace.view1', ['ngRoute','PixiPalace.Pixi'])
 
   $scope.addABunny = function () {
     var pixiService = PixiPalacePixiService;
-
+    
     var texture = pixiService.pixi.Texture.fromImage("images/bunny.png");
     var bunny = new pixiService.pixi.Sprite(texture);
 
+    //move origin to middle of sprite
     bunny.anchor.x = 0.5;
     bunny.anchor.y = 0.5;
 
+    //place bunny
     bunny.position.x = Math.random() * pixiService.renderer.view.width;
     bunny.position.y = Math.random() * pixiService.renderer.view.height;
     
-    bunny.speed = Math.floor((Math.floor(Math.random() * 10) / 2));
+    //randomizer for speed
+    var seed = Math.random().toFixed(2);
+    seed = seed / 2;//half
+    bunny.speed = seed + 0.05;//> 0
     
+    //add to the stage!
     pixiService.stage.addChild(bunny);
     
     function animate() {
@@ -32,7 +38,10 @@ angular.module('PixiPalace.view1', ['ngRoute','PixiPalace.Pixi'])
 
       // just for fun, lets rotate mr rabbit a little
       bunny.rotation += bunny.speed;
-
+      if($scope.dir){
+        console.log('$scope.dir', $scope.dir);
+      }
+      debugger;
       // render the stage
       pixiService.renderer.render(pixiService.stage);
     }

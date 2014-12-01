@@ -1,0 +1,1 @@
+function range(e,n,f){if("undefined"==typeof n&&(n=e,e=0),"undefined"==typeof f&&(f=1),f>0&&e>=n||0>f&&n>=e)return[];for(var r=[],u=e;f>0?n>u:u>n;u+=f)r.push(u);return r}

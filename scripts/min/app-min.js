@@ -1,1 +1,1 @@
-angular.module("PixiPalace",["ngRoute","PixiPalace.view1","PixiPalace.view2"]).config(["$routeProvider",function(e){"use strict";e.otherwise({redirectTo:"/view1"})}]);
+angular.module("PixiPalace",["ngRoute","ngTouch","PixiPalace.Pixi","PixiPalace.view1","PixiPalace.view2"]).config(["$routeProvider",function(i){"use strict";i.otherwise({redirectTo:"/view1"})}]);
