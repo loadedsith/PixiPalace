@@ -1,0 +1,41 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="PixiPalace" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="PixiPalace" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="PixiPalace" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="PixiPalace" class="no-js"> <!--<![endif]-->
+  <head>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>PixiPalace</title>
+
+    <link rel="stylesheet" href="styles/main.css">
+  
+    <script src="bower_components/sprockets-modernizr/modernizr.js"></script>
+    
+    <script src="bower_components/pixi.js/bin/pixi.dev.js"></script>
+    
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    
+  </head>
+  <body>
+
+    <main>
+      <div ng-view>Test</div>
+    </main>
+    
+    <script src="scripts/services/pixiPalace.js"></script>
+
+    <script src="scripts/directives/pixiStage.js" type="text/javascript" charset="utf-8"></script>
+    
+    <script src="scripts/view1/view1.js"></script>
+    <script src="scripts/view2/view2.js"></script>
+
+    <script src="scripts/app.js"></script>
+    
+  </body>
+</html>

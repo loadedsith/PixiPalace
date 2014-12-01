@@ -1,0 +1,1 @@
+"use strict";describe("PixiPalace.view2 module",function(){beforeEach(module("PixiPalace.view2")),describe("view2 controller",function(){it("should ....",inject(function(e){var i=e("View2Ctrl");expect(i).toBeDefined()}))})});

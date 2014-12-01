@@ -1,0 +1,1 @@
+angular.module("PixiPalace",["ngRoute","PixiPalace.view1","PixiPalace.view2"]).config(["$routeProvider",function(e){"use strict";e.otherwise({redirectTo:"/view1"})}]);

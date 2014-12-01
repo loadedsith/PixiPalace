@@ -1,0 +1,4343 @@
+@charset "UTF-8";
+/*
+ * Web Starter Kit
+ *
+ * Multi-screen layout styles for your page. Brought to you by the
+ * Web Starter Kit team.
+ *
+ */
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/_h5bp\.scss}line{font-family:\0000313}}
+html,
+button,
+input,
+select,
+textarea {
+  color: #222;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/_h5bp\.scss}line{font-family:\0000321}}
+body {
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/_h5bp\.scss}line{font-family:\0000326}}
+a {
+  color: #00e;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/_h5bp\.scss}line{font-family:\0000330}}
+a:visited {
+  color: #551a8b;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/_h5bp\.scss}line{font-family:\0000334}}
+a:hover {
+  color: #06e;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/_h5bp\.scss}line{font-family:\0000342}}
+img {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/_h5bp\.scss}line{font-family:\0000350}}
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/_h5bp\.scss}line{font-family:\0000360}}
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/* Prevent callout */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/_h5bp\.scss}line{font-family:\0000391}}
+.nocallout {
+  -webkit-touch-callout: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/_h5bp\.scss}line{font-family:\0000395}}
+.pressed {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* A hack for HTML5 contenteditable attribute on mobile */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/_h5bp\.scss}line{font-family:\00003101}}
+textarea[contenteditable] {
+  -webkit-appearance: none;
+}
+
+/* A workaround for S60 3.x and 5.0 devices which do not animated gif images if
+   they have been set as display: none */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/_h5bp\.scss}line{font-family:\00003108}}
+.gifhidden {
+  position: absolute;
+  left: -100%;
+}
+
+/*
+ * Image replacement
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/_h5bp\.scss}line{font-family:\00003117}}
+.ir {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: 0;
+  direction: ltr;
+  display: block;
+  overflow: hidden;
+  text-align: left;
+  text-indent: -999em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/_h5bp\.scss}line{font-family:\00003128}}
+.ir br {
+  display: none;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/_h5bp\.scss}line{font-family:\00003136}}
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/_h5bp\.scss}line{font-family:\00003145}}
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/_h5bp\.scss}line{font-family:\00003161}}
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/_h5bp\.scss}line{font-family:\00003175}}
+.invisible {
+  visibility: hidden;
+}
+
+/**
+ * Clearfix helper
+ * Used to contain floats: h5bp.com/q
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/_h5bp\.scss}line{font-family:\00003184}}
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/_h5bp\.scss}line{font-family:\00003190}}
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   Theses examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+@media only screen and (min-width: 800px) {
+  /* Style adjustments for viewports that meet the condition */
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) {
+  /* Style adjustments for viewports that meet the condition */
+}
+/*
+ * Visual Style Guide styles
+ * Remove if you prefer to use a CSS library, like Bootstrap
+ */
+/**
+*
+* Main Stylesheet For Visual Style Guide
+*
+**/
+/**
+*
+* Utils
+*
+**/
+/*==========  VARIABLES  ==========*/
+/*==========  FUNCTIONS  ==========*/
+/*==========  MIXINS  ==========*/
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_normalize\.scss}line{font-family:\000039}}
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_normalize\.scss}line{font-family:\0000319}}
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_normalize\.scss}line{font-family:\0000332}}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_normalize\.scss}line{font-family:\0000351}}
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_normalize\.scss}line{font-family:\0000364}}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_normalize\.scss}line{font-family:\0000374}}
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_normalize\.scss}line{font-family:\0000386}}
+a {
+  background: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_normalize\.scss}line{font-family:\0000394}}
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_normalize\.scss}line{font-family:\00003106}}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_normalize\.scss}line{font-family:\00003114}}
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_normalize\.scss}line{font-family:\00003123}}
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_normalize\.scss}line{font-family:\00003132}}
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_normalize\.scss}line{font-family:\00003142}}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_normalize\.scss}line{font-family:\00003150}}
+sup {
+  top: -0.5em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_normalize\.scss}line{font-family:\00003154}}
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_normalize\.scss}line{font-family:\00003165}}
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_normalize\.scss}line{font-family:\00003173}}
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Remove margin
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_normalize\.scss}line{font-family:\00003184}}
+figure {
+  margin: 0;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_normalize\.scss}line{font-family:\00003192}}
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_normalize\.scss}line{font-family:\00003202}}
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_normalize\.scss}line{font-family:\00003210}}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_normalize\.scss}line{font-family:\00003233}}
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_normalize\.scss}line{font-family:\00003247}}
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_normalize\.scss}line{font-family:\00003258}}
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_normalize\.scss}line{font-family:\00003271}}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_normalize\.scss}line{font-family:\00003283}}
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_normalize\.scss}line{font-family:\00003292}}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_normalize\.scss}line{font-family:\00003303}}
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_normalize\.scss}line{font-family:\00003315}}
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_normalize\.scss}line{font-family:\00003327}}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_normalize\.scss}line{font-family:\00003338}}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_normalize\.scss}line{font-family:\00003351}}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_normalize\.scss}line{font-family:\00003361}}
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_normalize\.scss}line{font-family:\00003370}}
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_normalize\.scss}line{font-family:\00003379}}
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_normalize\.scss}line{font-family:\00003390}}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_normalize\.scss}line{font-family:\00003395}}
+td,
+th {
+  padding: 0;
+}
+
+/* Blockquote
+   ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_normalize\.scss}line{font-family:\00003403}}
+blockquote {
+  margin: 0;
+}
+
+/**
+*
+* Global
+*
+**/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_global\.scss}line{font-family:\000037}}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_global\.scss}line{font-family:\0000313}}
+html,
+body,
+button {
+  -moz-osx-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_global\.scss}line{font-family:\0000321}}
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6250em;
+  /* 26px */
+  font-weight: 300;
+  color: #404040;
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_utils\.scss}line{font-family:\00003154}}
+body::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  z-index: 9;
+  display: none;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.15) 95%, rgba(0, 0, 0, 0.15) 100%);
+  background-size: 100% 26px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_utils\.scss}line{font-family:\00003170}}
+body.debug::after {
+  display: block;
+  pointer-events: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_global\.scss}line{font-family:\0000331}}
+pre {
+  background: #f0f0f0;
+  padding: 13px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_global\.scss}line{font-family:\0000336}}
+.main-container {
+  box-sizing: content-box;
+  position: relative;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media only screen and (min-width: 620px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_global\.scss}line{font-family:\0000336}}
+  .main-container {
+    padding-left: 4.8%;
+    padding-right: 4.8%;
+    max-width: 688px;
+  }
+}
+@media only screen and (min-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_global\.scss}line{font-family:\0000336}}
+  .main-container {
+    padding-left: 4.4%;
+    padding-right: 4.4%;
+    max-width: 864px;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_global\.scss}line{font-family:\0000340}}
+.container {
+  box-sizing: content-box;
+  position: relative;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media only screen and (min-width: 620px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_global\.scss}line{font-family:\0000340}}
+  .container {
+    padding-left: 4.8%;
+    padding-right: 4.8%;
+    max-width: 688px;
+  }
+}
+@media only screen and (min-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_global\.scss}line{font-family:\0000340}}
+  .container {
+    padding-left: 4.4%;
+    padding-right: 4.4%;
+    max-width: 864px;
+  }
+}
+
+@media only screen and (min-width: 620px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_global\.scss}line{font-family:\0000344}}
+  .container-medium {
+    box-sizing: content-box;
+    position: relative;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media only screen and (min-width: 620px) and (min-width: 620px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_global\.scss}line{font-family:\0000344}}
+  .container-medium {
+    padding-left: 4.8%;
+    padding-right: 4.8%;
+    max-width: 688px;
+  }
+}
+@media only screen and (min-width: 620px) and (min-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_global\.scss}line{font-family:\0000344}}
+  .container-medium {
+    padding-left: 4.4%;
+    padding-right: 4.4%;
+    max-width: 864px;
+  }
+}
+
+@media only screen and (max-width: 619px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_global\.scss}line{font-family:\0000350}}
+  .container-small {
+    box-sizing: content-box;
+    position: relative;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media only screen and (max-width: 619px) and (min-width: 620px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_global\.scss}line{font-family:\0000350}}
+  .container-small {
+    padding-left: 4.8%;
+    padding-right: 4.8%;
+    max-width: 688px;
+  }
+}
+@media only screen and (max-width: 619px) and (min-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_global\.scss}line{font-family:\0000350}}
+  .container-small {
+    padding-left: 4.4%;
+    padding-right: 4.4%;
+    max-width: 864px;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_global\.scss}line{font-family:\0000356}}
+  .content {
+    margin-right: 25.9%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_global\.scss}line{font-family:\0000360}}
+  .content pre {
+    margin-right: -25.9%;
+  }
+}
+
+@font-face {
+  font-family: icons;
+  src: url(../images/icons/icons.eot);
+  src: url(../images/icons/icons.eot?#iefix) format("embedded-opentype"), url(../images/icons/icons.woff2) format("woff2"), url(../images/icons/icons.woff) format("woff"), url(../images/icons/icons.ttf) format("truetype"), url(../images/icons/icons.svg?#icons) format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_icons\.scss}line{font-family:\0000313}}
+.icon {
+  font-family: 'icons';
+  display: inline-block;
+  vertical-align: top;
+  line-height: 1;
+  font-weight: normal;
+  font-style: normal;
+  speak: none;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_icons\.scss}line{font-family:\0000330}}
+.icon-bullet::before, ul li::before, ul.list-links a::before, .list-anchor a::before {
+  content: "\e001";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_icons\.scss}line{font-family:\0000335}}
+.icon-chevron-down::before {
+  content: '\e002';
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_icons\.scss}line{font-family:\0000340}}
+.icon-chevron-large::before {
+  content: '\e003';
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_icons\.scss}line{font-family:\0000345}}
+.icon-chevron-left::before, .article-nav-link--prev::before {
+  content: '\e004';
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_icons\.scss}line{font-family:\0000350}}
+.icon-chevron-right::before, .article-nav-link--next::before, ul.list-links.list-links--primary a::before {
+  content: '\e005';
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_icons\.scss}line{font-family:\0000355}}
+.icon-chevron-up::before {
+  content: '\e006';
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_icons\.scss}line{font-family:\0000360}}
+.icon-close::before {
+  content: '\e007';
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_icons\.scss}line{font-family:\0000365}}
+.icon-cog::before {
+  content: '\e008';
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_icons\.scss}line{font-family:\0000370}}
+.icon-diamond::before {
+  content: '\e009';
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_icons\.scss}line{font-family:\0000375}}
+.icon-exclamation::before {
+  content: '\e00a';
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_icons\.scss}line{font-family:\0000380}}
+.icon-google-dev::before {
+  content: '\e00b';
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_icons\.scss}line{font-family:\0000385}}
+.icon-hash::before {
+  content: '\e00c';
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_icons\.scss}line{font-family:\0000390}}
+.icon-introduction-to-media::before {
+  content: '\e00d';
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_icons\.scss}line{font-family:\0000395}}
+.icon-lessons::before {
+  content: '\e00e';
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_icons\.scss}line{font-family:\00003100}}
+.icon-menu::before {
+  content: '\e00f';
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_icons\.scss}line{font-family:\00003105}}
+.icon-minus::before {
+  content: '\e010';
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_icons\.scss}line{font-family:\00003110}}
+.icon-multi-device-layouts::before {
+  content: '\e011';
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_icons\.scss}line{font-family:\00003115}}
+.icon-performance::before {
+  content: '\e012';
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_icons\.scss}line{font-family:\00003120}}
+.icon-plus::before {
+  content: '\e013';
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_icons\.scss}line{font-family:\00003125}}
+.icon-question::before {
+  content: '\e014';
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_icons\.scss}line{font-family:\00003130}}
+.icon-slash::before {
+  content: '\e015';
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_icons\.scss}line{font-family:\00003135}}
+.icon-star::before {
+  content: '\e016';
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_icons\.scss}line{font-family:\00003140}}
+.icon-tick::before {
+  content: '\e017';
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_icons\.scss}line{font-family:\00003145}}
+.icon-user-input::before {
+  content: '\e018';
+}
+
+/**
+*
+* Material design color palettes.
+* @see http://www.google.com/design/spec/style/color.html
+*
+**/
+/* ==========  Blacks  ========== */
+/* ==========  Color Palettes  ========== */
+/* ==========  Color definitions  ========== */
+/**
+*
+* Highlight
+*
+**/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\000037}}
+.highlight-module {
+  overflow: hidden;
+  margin-top: 52px;
+  margin-bottom: 26px;
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\0000313}}
+.highlight-module::after {
+  background: #f0f0f0;
+  content: '';
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 0;
+  width: 100%;
+  right: 0;
+  left: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\0000326}}
+.highlight-module ul,
+.highlight-module ol {
+  padding-left: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\0000332}}
+.highlight-module__container {
+  box-sizing: content-box;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 78px;
+  z-index: 1;
+  position: relative;
+}
+@media only screen and (min-width: 620px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\0000332}}
+  .highlight-module__container {
+    padding-left: 4.8%;
+    padding-right: 4.8%;
+    max-width: 688px;
+  }
+}
+@media only screen and (min-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\0000332}}
+  .highlight-module__container {
+    padding-left: 4.4%;
+    padding-right: 4.4%;
+    max-width: 864px;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_utils\.scss}line{font-family:\00003371}}
+.highlight-module__container::before {
+  display: none;
+}
+@media only screen and (min-width: 620px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_utils\.scss}line{font-family:\00003371}}
+  .highlight-module__container::before {
+    display: block;
+    position: absolute;
+    top: 106px;
+    right: 45px;
+    font-family: "icons";
+    font-size: 130px;
+    line-height: 1px;
+    text-align: center;
+    height: 100%;
+    width: 30.3%;
+    color: #ffffff;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_utils\.scss}line{font-family:\00003389}}
+.highlight-module--left .highlight-module__container::before {
+  right: auto;
+  left: 45px;
+}
+@media only screen and (min-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_utils\.scss}line{font-family:\00003371}}
+  .highlight-module__container::before {
+    top: 134px;
+    width: 22.2%;
+    font-size: 180px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_utils\.scss}line{font-family:\00003399}}
+  .highlight-module--large .highlight-module__container::before {
+    font-size: 430px;
+  }
+}
+@media only screen and (min-width: 620px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\0000332}}
+  .highlight-module__container {
+    padding-bottom: 52px;
+  }
+}
+@media only screen and (min-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\0000332}}
+  .highlight-module__container {
+    min-height: 208px;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\0000347}}
+.highlight-module__title {
+  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  font-size: 68px;
+  font-weight: 300;
+  line-height: 1.1471em;
+  /* 78px */
+  padding-top: 0.3824em;
+  padding-bottom: 0;
+  padding-top: 26px;
+}
+@media only screen and (min-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\0000347}}
+  .highlight-module__title {
+    font-family: "Roboto Condensed", Helvetica, sans-serif;
+    font-size: 110px;
+    font-weight: 300;
+    line-height: 1.19em;
+    /* 130px */
+    padding-top: 0.2364em;
+    padding-bottom: 0;
+  }
+}
+@media only screen and (min-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\0000347}}
+  .highlight-module__title {
+    font-family: "Roboto Condensed", Helvetica, sans-serif;
+    font-size: 42px;
+    font-weight: 300;
+    line-height: 1.2381em;
+    /* 52px */
+    padding-top: 0.6190em;
+    padding-bottom: 0;
+  }
+}
+@media only screen and (min-width: 800px) and (min-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\0000347}}
+  .highlight-module__title {
+    font-family: "Roboto Condensed", Helvetica, sans-serif;
+    font-size: 68px;
+    font-weight: 300;
+    line-height: 1.1471em;
+    /* 78px */
+    padding-top: 0.3824em;
+    padding-bottom: 0;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\0000356}}
+.highlight-module__cta {
+  display: block;
+}
+
+/*==========  LEARNING  ==========*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\0000362}}
+.highlight-module--learning {
+  color: #ffffff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\0000365}}
+.highlight-module--learning::after {
+  background-color: #da2e75;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\0000369}}
+.highlight-module--learning a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/*==========  REMEMBER  ==========*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\0000377}}
+.highlight-module--remember {
+  color: #ffffff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\0000380}}
+.highlight-module--remember::after {
+  background-color: #09829a;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\0000384}}
+.highlight-module--remember a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/*==========  CODE  ==========*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\0000392}}
+.highlight-module--code {
+  overflow: visible;
+  margin-bottom: 52px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\0000396}}
+.highlight-module--code pre {
+  margin: 0;
+  padding-top: 26px;
+  font-size: 14px;
+  line-height: 26px;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\00003105}}
+.highlight-module--code pre span {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\00003112}}
+.highlight-module--code code {
+  margin: 0;
+  padding: 0;
+  word-spacing: -2px;
+  display: block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\00003119}}
+.highlight-module--code .highlight-module__container {
+  padding-bottom: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\00003123}}
+.highlight-module--code .highlight-module__cta {
+  position: absolute;
+  bottom: -26px;
+}
+
+/*==========  LEFT  ==========*/
+@media only screen and (min-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\00003133}}
+  .highlight-module--left::after {
+    width: 80%;
+    right: 20%;
+  }
+}
+
+/*==========  RIGHT  ==========*/
+@media only screen and (min-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\00003144}}
+  .highlight-module--right::after {
+    width: 80%;
+    left: 20%;
+  }
+}
+@media only screen and (min-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\00003152}}
+  .highlight-module--right.highlight-module--code::after {
+    width: 100%;
+    left: 0;
+  }
+}
+
+/*==========  INLINE  ==========*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\00003162}}
+.highlight-module--inline {
+  color: #404040;
+  overflow: visible;
+  margin: 26px 0 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\00003167}}
+.highlight-module--inline .highlight-module__container {
+  padding-bottom: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\00003170}}
+.highlight-module--inline .highlight-module__container::before {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\00003175}}
+.highlight-module--inline .highlight-module__content {
+  border-color: #e0e0e0;
+  border-style: solid;
+  border-width: 1px;
+  border-left-width: 0;
+  border-right-width: 0;
+  margin-bottom: -2px;
+  padding: 0 0 26px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\00003185}}
+.highlight-module--inline .highlight-module__title {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.3000em;
+  /* 26px */
+  padding-top: 1.3000em;
+  padding-bottom: 0;
+}
+@media only screen and (min-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\00003185}}
+  .highlight-module--inline .highlight-module__title {
+    font-family: "Roboto Condensed", Helvetica, sans-serif;
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 1.0000em;
+    /* 26px */
+    padding-top: 1.0000em;
+    padding-bottom: 0;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\00003190}}
+.highlight-module--inline.highlight-module--remember .highlight-module__title, .highlight-module--inline.highlight-module--remember li::before {
+  color: #09829a;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\00003197}}
+.highlight-module--inline.highlight-module--learning .highlight-module__title, .highlight-module--inline.highlight-module--learning li::before {
+  color: #da2e75;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\00003203}}
+.highlight-module--inline::after {
+  display: none !important;
+}
+
+/*==========  COLORS  ==========*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\00003210}}
+div.highlight > pre > code, code .highlight {
+  background: transparent;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\00003211}}
+div.highlight > pre > code .c, code .highlight .c {
+  color: #999988;
+  font-style: italic;
+}
+
+/* Comment */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\00003212}}
+div.highlight > pre > code .err, code .highlight .err {
+  color: #a61717;
+  background-color: #e3d2d2;
+}
+
+/* Error */
+/* Keyword */
+/* Operator */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\00003215}}
+div.highlight > pre > code .cm, code .highlight .cm {
+  color: #999988;
+  font-style: italic;
+}
+
+/* Comment.Multiline */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\00003216}}
+div.highlight > pre > code .cp, code .highlight .cp {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+/* Comment.Preproc */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\00003217}}
+div.highlight > pre > code .c1, code .highlight .c1 {
+  color: #999988;
+  font-style: italic;
+}
+
+/* Comment.Single */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\00003218}}
+div.highlight > pre > code .cs, code .highlight .cs {
+  color: rgba(0, 0, 0, 0.54);
+  font-style: italic;
+}
+
+/* Comment.Special */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\00003219}}
+div.highlight > pre > code .gs, code .highlight .gd {
+  color: #000000;
+  background-color: #ffdddd;
+}
+
+/* Generic.Deleted */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\00003220}}
+div.highlight > pre > code .gd .x, code .highlight .gd .x {
+  color: #000000;
+  background-color: #ffaaaa;
+}
+
+/* Generic.Deleted.Specific */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\00003221}}
+div.highlight > pre > code .ge, code .highlight .ge {
+  font-style: italic;
+}
+
+/* Generic.Emph */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\00003222}}
+div.highlight > pre > code .gr, code .highlight .gr {
+  color: #aa0000;
+}
+
+/* Generic.Error */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\00003223}}
+div.highlight > pre > code .gh, code .highlight .gh {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+/* Generic.Heading */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\00003224}}
+div.highlight > pre > code .gi, code .highlight .gi {
+  color: #000000;
+  background-color: #ddffdd;
+}
+
+/* Generic.Inserted */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\00003225}}
+div.highlight > pre > code .gi .x, code .highlight .gi .x {
+  color: #000000;
+  background-color: #aaffaa;
+}
+
+/* Generic.Inserted.Specific */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\00003226}}
+div.highlight > pre > code .go, code .highlight .go {
+  color: #888888;
+}
+
+/* Generic.Output */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\00003227}}
+div.highlight > pre > code .gp, code .highlight .gp {
+  color: #555555;
+}
+
+/* Generic.Prompt */
+/* Generic.Strong */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\00003229}}
+div.highlight > pre > code .gu, code .highlight .gu {
+  color: #aaaaaa;
+}
+
+/* Generic.Subheading */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\00003230}}
+div.highlight > pre > code .gt, code .highlight .gt {
+  color: #aa0000;
+}
+
+/* Generic.Traceback */
+/* Keyword.Constant */
+/* Keyword.Declaration */
+/* Keyword.Pseudo */
+/* Keyword.Reserved */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\00003235}}
+div.highlight > pre > code .kt, code .highlight .kt {
+  color: #445588;
+}
+
+/* Keyword.Type */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\00003236}}
+div.highlight > pre > code .m, code .highlight .m {
+  color: #009999;
+}
+
+/* Literal.Number */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\00003237}}
+div.highlight > pre > code .s, code .highlight .s {
+  color: #da2e75;
+}
+
+/* Literal.String */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\00003238}}
+div.highlight > pre > code .na, code .highlight .na {
+  color: #008080;
+}
+
+/* Name.Attribute */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\00003239}}
+div.highlight > pre > code .nb, code .highlight .nb {
+  color: #0086B3;
+}
+
+/* Name.Builtin */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\00003240}}
+div.highlight > pre > code .nc, code .highlight .nc {
+  color: #445588;
+}
+
+/* Name.Class */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\00003241}}
+div.highlight > pre > code .no, code .highlight .no {
+  color: #008080;
+}
+
+/* Name.Constant */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\00003242}}
+div.highlight > pre > code .ni, code .highlight .ni {
+  color: #800080;
+}
+
+/* Name.Entity */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\00003243}}
+div.highlight > pre > code .ne, code .highlight .ne {
+  color: #990000;
+}
+
+/* Name.Exception */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\00003244}}
+div.highlight > pre > code .nf, code .highlight .nf {
+  color: #990000;
+}
+
+/* Name.Function */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\00003245}}
+div.highlight > pre > code .nn, code .highlight .nn {
+  color: #555555;
+}
+
+/* Name.Namespace */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\00003246}}
+div.highlight > pre > code .nt, code .highlight .nt {
+  color: #09829a;
+}
+
+/* Name.Tag */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\00003247}}
+div.highlight > pre > code .nv, code .highlight .nv {
+  color: #008080;
+}
+
+/* Name.Variable */
+/* Operator.Word */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\00003249}}
+div.highlight > pre > code .w, code .highlight .w {
+  color: #bbbbbb;
+}
+
+/* Text.Whitespace */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\00003250}}
+div.highlight > pre > code .mf, code .highlight .mf {
+  color: #009999;
+}
+
+/* Literal.Number.Float */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\00003251}}
+div.highlight > pre > code .mh, code .highlight .mh {
+  color: #009999;
+}
+
+/* Literal.Number.Hex */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\00003252}}
+div.highlight > pre > code .mi, code .highlight .mi {
+  color: #009999;
+}
+
+/* Literal.Number.Integer */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\00003253}}
+div.highlight > pre > code .mo, code .highlight .mo {
+  color: #009999;
+}
+
+/* Literal.Number.Oct */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\00003254}}
+div.highlight > pre > code .sb, code .highlight .sb {
+  color: #da2e75;
+}
+
+/* Literal.String.Backtick */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\00003255}}
+div.highlight > pre > code .sc, code .highlight .sc {
+  color: #da2e75;
+}
+
+/* Literal.String.Char */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\00003256}}
+div.highlight > pre > code .sd, code .highlight .sd {
+  color: #da2e75;
+}
+
+/* Literal.String.Doc */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\00003257}}
+div.highlight > pre > code .s2, code .highlight .s2 {
+  color: #da2e75;
+}
+
+/* Literal.String.Double */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\00003258}}
+div.highlight > pre > code .se, code .highlight .se {
+  color: #da2e75;
+}
+
+/* Literal.String.Escape */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\00003259}}
+div.highlight > pre > code .sh, code .highlight .sh {
+  color: #da2e75;
+}
+
+/* Literal.String.Heredoc */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\00003260}}
+div.highlight > pre > code .si, code .highlight .si {
+  color: #da2e75;
+}
+
+/* Literal.String.Interpol */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\00003261}}
+div.highlight > pre > code .sx, code .highlight .sx {
+  color: #da2e75;
+}
+
+/* Literal.String.Other */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\00003262}}
+div.highlight > pre > code .sr, code .highlight .sr {
+  color: #009926;
+}
+
+/* Literal.String.Regex */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\00003263}}
+div.highlight > pre > code .s1, code .highlight .s1 {
+  color: #da2e75;
+}
+
+/* Literal.String.Single */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\00003264}}
+div.highlight > pre > code .ss, code .highlight .ss {
+  color: #990073;
+}
+
+/* Literal.String.Symbol */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\00003265}}
+div.highlight > pre > code .bp, code .highlight .bp {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+/* Name.Builtin.Pseudo */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\00003266}}
+div.highlight > pre > code .vc, code .highlight .vc {
+  color: #008080;
+}
+
+/* Name.Variable.Class */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\00003267}}
+div.highlight > pre > code .vg, code .highlight .vg {
+  color: #008080;
+}
+
+/* Name.Variable.Global */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\00003268}}
+div.highlight > pre > code .vi, code .highlight .vi {
+  color: #008080;
+}
+
+/* Name.Variable.Instance */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_highlight\.scss}line{font-family:\00003269}}
+div.highlight > pre > code .il, code .highlight .il {
+  color: #009999;
+}
+
+/* Literal.Number.Integer.Long */
+/**
+*
+* Editorial Header
+*
+**/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_editorial-header\.scss}line{font-family:\000037}}
+.editorial-header {
+  overflow: hidden;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_editorial-header\.scss}line{font-family:\0000310}}
+.editorial-header .breadcrumbs {
+  color: #3372df;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_editorial-header\.scss}line{font-family:\0000313}}
+.editorial-header .breadcrumbs a {
+  color: #3372df;
+}
+@media only screen and (min-width: 620px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_editorial-header\.scss}line{font-family:\0000318}}
+  .editorial-header .container {
+    position: relative;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_editorial-header\.scss}line{font-family:\0000324}}
+  .editorial-header .container::before {
+    content: "";
+    font-family: "icons";
+    font-size: 1000px;
+    line-height: 0;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 100%;
+    color: #f0f0f0;
+    margin: 168px -35px 0 0;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_editorial-header\.scss}line{font-family:\0000341}}
+.editorial-header__excerpt {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.3000em;
+  /* 26px */
+  padding-top: 1.3000em;
+  padding-bottom: 0;
+  font-family: "Roboto Condensed", Helvetica, sans-serif;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_editorial-header\.scss}line{font-family:\0000346}}
+.editorial-header .tag {
+  padding-top: 52px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_editorial-header\.scss}line{font-family:\0000350}}
+.editorial-header__subtitle {
+  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  font-size: 42px;
+  font-weight: 300;
+  line-height: 1.2381em;
+  /* 52px */
+  padding-top: 0.6190em;
+  padding-bottom: 0;
+  padding-top: 0;
+  color: #3372df;
+}
+@media only screen and (min-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_editorial-header\.scss}line{font-family:\0000350}}
+  .editorial-header__subtitle {
+    font-family: "Roboto Condensed", Helvetica, sans-serif;
+    font-size: 68px;
+    font-weight: 300;
+    line-height: 1.1471em;
+    /* 78px */
+    padding-top: 0.3824em;
+    padding-bottom: 0;
+  }
+}
+@media only screen and (min-width: 620px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_editorial-header\.scss}line{font-family:\0000350}}
+  .editorial-header__subtitle {
+    padding-top: 0;
+    padding-bottom: 26px;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_editorial-header\.scss}line{font-family:\0000360}}
+.editorial-header__toc {
+  margin-top: 26px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_editorial-header\.scss}line{font-family:\0000363}}
+.editorial-header__toc ol {
+  padding-top: 0;
+}
+@media only screen and (min-width: 620px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_editorial-header\.scss}line{font-family:\0000363}}
+  .editorial-header__toc ol {
+    padding-top: 0;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_editorial-header\.scss}line{font-family:\0000372}}
+.editorial-header__toc-title {
+  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 13px;
+  padding-bottom: 13px !important;
+  color: #3372df;
+}
+
+/**
+*
+* Editorial Header
+*
+**/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_summary-header\.scss}line{font-family:\000037}}
+.summary-header {
+  background-color: #3372df;
+  padding-bottom: 78px;
+  color: #ffffff;
+  margin-bottom: 26px;
+  box-shadow: inset 0 2px 0 0 #fff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_summary-header\.scss}line{font-family:\0000314}}
+.summary-header .breadcrumbs__link {
+  color: #ffffff;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_summary-header\.scss}line{font-family:\0000320}}
+.summary-header__anchor-list {
+  margin-top: 52px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_summary-header\.scss}line{font-family:\0000326}}
+.summary-header__anchors-item a {
+  color: #ffffff;
+}
+
+/**
+*
+* Related items
+*
+**/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_related-guides\.scss}line{font-family:\000037}}
+.related-guides {
+  margin-top: 78px;
+  padding-bottom: 50px;
+  border-top: 2px solid #e0e0e0;
+  padding-top: 50px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_related-guides\.scss}line{font-family:\0000315}}
+.related-guides__list .list-links {
+  padding-top: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_related-guides\.scss}line{font-family:\0000319}}
+.related-guides__list a {
+  display: block;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_related-guides\.scss}line{font-family:\0000324}}
+.related-guides__title {
+  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 1.0000em;
+  /* 26px */
+  padding-top: 1.0000em;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+@media only screen and (min-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_related-guides\.scss}line{font-family:\0000324}}
+  .related-guides__title {
+    font-family: "Roboto Condensed", Helvetica, sans-serif;
+    font-size: 42px;
+    font-weight: 300;
+    line-height: 1.2381em;
+    /* 52px */
+    padding-top: 0.6190em;
+    padding-bottom: 0;
+  }
+}
+@media only screen and (min-width: 620px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_related-guides\.scss}line{font-family:\0000324}}
+  .related-guides__title {
+    padding-top: 0;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_related-guides\.scss}line{font-family:\0000333}}
+.related-guides__main-link {
+  text-transform: uppercase;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_related-guides\.scss}line{font-family:\0000336}}
+.related-guides__main-link::before {
+  content: '#';
+  display: inline-block;
+  padding-right: 2px;
+}
+
+/**
+*
+* In this guide
+*
+**/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_in-this-guide\.scss}line{font-family:\000037}}
+.in-this-guide {
+  margin-top: -78px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_in-this-guide\.scss}line{font-family:\0000311}}
+.in-this-guide__title {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.3000em;
+  /* 26px */
+  padding-top: 1.3000em;
+  padding-bottom: 0;
+  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  margin-bottom: 26px;
+}
+
+/**
+*
+* Articles section
+*
+**/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_articles-section\.scss}line{font-family:\000037}}
+.articles-section {
+  background: #f0f0f0;
+  text-align: center;
+  padding: 26px 0 104px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_articles-section\.scss}line{font-family:\0000313}}
+.articles-count {
+  color: #3372df;
+  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_articles-section\.scss}line{font-family:\0000319}}
+.article-section__icon {
+  top: -26px;
+}
+@media only screen and (min-width: 620px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_articles-section\.scss}line{font-family:\0000319}}
+  .article-section__icon {
+    top: -39px;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_guides-section\.scss}line{font-family:\000031}}
+.guides-section {
+  background: #f0f0f0;
+  text-align: center;
+  padding: 26px 0 104px;
+}
+
+/**
+*
+* Page header
+*
+**/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_page-header\.scss}line{font-family:\000037}}
+.page-header {
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_page-header\.scss}line{font-family:\0000310}}
+.page-header .breadcrumbs {
+  text-align: left;
+  color: #3372df;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_page-header\.scss}line{font-family:\0000314}}
+.page-header .breadcrumbs a {
+  color: #3372df;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_page-header\.scss}line{font-family:\0000319}}
+.page-header h3 {
+  color: rgba(0, 0, 0, 0.87);
+  padding-top: 52px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_page-header\.scss}line{font-family:\0000325}}
+.page-header__excerpt {
+  position: relative;
+  padding-top: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_page-header\.scss}line{font-family:\0000329}}
+.page-header__excerpt:last-child {
+  padding-bottom: 78px;
+}
+
+/**
+*
+* Editorial Header
+*
+**/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_featured-section\.scss}line{font-family:\000037}}
+.featured-section {
+  background: #f0f0f0;
+}
+
+/**
+*
+* Editorial Header
+*
+**/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_featured-spotlight\.scss}line{font-family:\000037}}
+.featured-spotlight {
+  background: rgba(0, 0, 0, 0.87);
+  color: #ffffff;
+  overflow: hidden;
+  padding-bottom: 77px;
+  margin-top: 52px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_featured-spotlight\.scss}line{font-family:\0000314}}
+.featured-spotlight p {
+  padding-bottom: 26px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_featured-spotlight\.scss}line{font-family:\0000318}}
+.featured-spotlight .cta--primary {
+  color: #ffffff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_featured-spotlight\.scss}line{font-family:\0000321}}
+.featured-spotlight .cta--primary:hover {
+  color: #ffffff;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_featured-spotlight\.scss}line{font-family:\0000327}}
+.featured-spotlight__container {
+  position: relative;
+}
+
+@media only screen and (max-width: 619px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_featured-spotlight\.scss}line{font-family:\0000331}}
+  .featured-spotlight__img {
+    padding-top: 58.4%;
+    padding-bottom: 0;
+    height: 0;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_featured-spotlight\.scss}line{font-family:\0000341}}
+.featured-spotlight__img img {
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 0;
+}
+@media only screen and (min-width: 620px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_featured-spotlight\.scss}line{font-family:\0000341}}
+  .featured-spotlight__img img {
+    width: auto;
+    max-width: none;
+    left: 109%;
+  }
+}
+@media only screen and (min-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_featured-spotlight\.scss}line{font-family:\0000341}}
+  .featured-spotlight__img img {
+    left: 107.4%;
+  }
+}
+
+/**
+*
+* Quote
+*
+**/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_quote\.scss}line{font-family:\000037}}
+.quote__content {
+  position: relative;
+  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.6250em;
+  /* 26px */
+  padding-top: 1.6250em;
+  padding-bottom: 0;
+  padding-top: 104px;
+  padding-left: 26px;
+}
+@media only screen and (min-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_quote\.scss}line{font-family:\000037}}
+  .quote__content {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.3000em;
+    /* 26px */
+    padding-top: 1.3000em;
+    padding-bottom: 0;
+  }
+}
+@media only screen and (min-width: 620px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_quote\.scss}line{font-family:\000037}}
+  .quote__content {
+    padding-top: 52px;
+    padding-left: 0;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_quote\.scss}line{font-family:\0000319}}
+.quote__content p {
+  border-top: 1px solid #e0e0e0;
+  text-align: right;
+  font-weight: 500;
+  margin-top: 12px;
+  padding-top: 13px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_quote\.scss}line{font-family:\0000327}}
+.quote__content::before {
+  content: open-quote;
+  display: block;
+  position: absolute;
+  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  font-weight: 700;
+  color: #f0f0f0;
+  top: 90px;
+  left: 26px;
+  font-size: 260px;
+}
+@media only screen and (min-width: 620px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_quote\.scss}line{font-family:\0000327}}
+  .quote__content::before {
+    top: 225px;
+    left: -210px;
+    font-size: 540px;
+  }
+}
+
+/**
+*
+* Article nav
+*
+**/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_article-nav\.scss}line{font-family:\000037}}
+.article-nav {
+  overflow: hidden;
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_article-nav\.scss}line{font-family:\0000311}}
+.article-nav::before {
+  content: '';
+  border-left: 2px solid #e0e0e0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_article-nav\.scss}line{font-family:\0000321}}
+.article-nav-link {
+  padding: 26px 32px;
+  float: left;
+  width: 50%;
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_article-nav\.scss}line{font-family:\0000327}}
+.article-nav-link::before {
+  position: absolute;
+  top: 21px;
+  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+@media only screen and (min-width: 620px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_article-nav\.scss}line{font-family:\0000327}}
+  .article-nav-link::before {
+    top: 25px;
+    font-size: 26px;
+    display: block;
+    padding: 13px 10px;
+    color: #ffffff;
+    background: #3372df;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_article-nav\.scss}line{font-family:\0000345}}
+.article-nav p {
+  padding: 0;
+  margin: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_article-nav\.scss}line{font-family:\0000350}}
+.article-nav-link--prev {
+  text-align: right;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_article-nav\.scss}line{font-family:\0000354}}
+.article-nav-link--prev::before {
+  font-family: "icons";
+  left: 32px;
+}
+@media only screen and (min-width: 620px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_article-nav\.scss}line{font-family:\0000360}}
+  .article-nav-link--prev p {
+    padding-left: 52px;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_article-nav\.scss}line{font-family:\0000370}}
+.article-nav-link--next::before {
+  font-family: "icons";
+  right: 32px;
+}
+@media only screen and (min-width: 620px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_article-nav\.scss}line{font-family:\0000376}}
+  .article-nav-link--next p {
+    padding-right: 52px;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_article-nav\.scss}line{font-family:\0000383}}
+.article-nav-count {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.3000em;
+  /* 26px */
+  padding-top: 1.3000em;
+  padding-bottom: 0;
+  font-weight: 700;
+}
+@media only screen and (min-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_article-nav\.scss}line{font-family:\0000383}}
+  .article-nav-count {
+    font-family: "Roboto Condensed", Helvetica, sans-serif;
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 1.0000em;
+    /* 26px */
+    padding-top: 1.0000em;
+    padding-bottom: 0;
+  }
+}
+@media only screen and (min-width: 620px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_article-nav\.scss}line{font-family:\0000383}}
+  .article-nav-count {
+    font-weight: 400;
+  }
+}
+
+/**
+*
+* Text module
+*
+**/
+@media only screen and (min-width: 620px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_did-you-know\.scss}line{font-family:\000039}}
+  .did-you-know ol {
+    padding-top: 0 !important;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_did-you-know\.scss}line{font-family:\0000315}}
+.did-you-know .cta--primary {
+  margin-top: 26px;
+  font-weight: 500;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_did-you-know\.scss}line{font-family:\0000320}}
+.did-you-know > .g--half {
+  position: relative;
+  padding-left: 0;
+}
+@media only screen and (min-width: 620px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_did-you-know\.scss}line{font-family:\0000320}}
+  .did-you-know > .g--half {
+    padding-left: 32px;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_did-you-know\.scss}line{font-family:\0000327}}
+.did-you-know__symbol {
+  padding-bottom: 312px;
+}
+@media only screen and (min-width: 620px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_did-you-know\.scss}line{font-family:\0000327}}
+  .did-you-know__symbol {
+    padding-bottom: 26px;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_did-you-know\.scss}line{font-family:\0000331}}
+.did-you-know__symbol::after {
+  content: "";
+  color: #3372df;
+  font-family: "icons";
+  font-size: 300px;
+  top: 150px;
+  left: 30%;
+  position: relative;
+  display: block;
+  width: 0;
+}
+@media only screen and (min-width: 620px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_did-you-know\.scss}line{font-family:\0000331}}
+  .did-you-know__symbol::after {
+    position: absolute;
+    font-size: 400px;
+    top: 200px;
+    left: 110%;
+  }
+}
+@media only screen and (min-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_did-you-know\.scss}line{font-family:\0000331}}
+  .did-you-know__symbol::after {
+    position: absolute;
+    font-size: 400px;
+    top: 200px;
+    left: 124%;
+  }
+}
+
+/**
+*
+* Table of contents
+*
+**/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_toc\.scss}line{font-family:\000037}}
+.toc__title {
+  font-size: 16px;
+  line-height: 1.6250em;
+  /* 26px */
+  padding-top: 1.6250em;
+  padding-bottom: 0;
+  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  padding-bottom: 13px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #e0e0e0;
+}
+@media only screen and (min-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_toc\.scss}line{font-family:\000037}}
+  .toc__title {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.3000em;
+    /* 26px */
+    padding-top: 1.3000em;
+    padding-bottom: 0;
+  }
+}
+@media only screen and (min-width: 620px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_toc\.scss}line{font-family:\000037}}
+  .toc__title {
+    padding-bottom: 13px;
+    margin-bottom: 13px;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_toc\.scss}line{font-family:\0000320}}
+.toc__list {
+  padding-top: 0;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 12px;
+  margin-bottom: 13px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_toc\.scss}line{font-family:\0000327}}
+.toc__list a {
+  display: block;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_toc\.scss}line{font-family:\0000332}}
+.toc__sublist {
+  padding-top: 0;
+}
+
+/**
+*
+* Next Lessons
+*
+**/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_next-lessons\.scss}line{font-family:\000037}}
+.next-lessons {
+  background: rgba(0, 0, 0, 0.87);
+  padding: 26px 26px 52px;
+  margin-top: 26px;
+  color: #ffffff;
+  position: relative;
+}
+@media only screen and (min-width: 620px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_next-lessons\.scss}line{font-family:\0000315}}
+  .next-lessons h3 i {
+    display: none;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_next-lessons\.scss}line{font-family:\0000322}}
+.next-lessons::before, .next-lessons::after {
+  color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  display: none;
+}
+@media only screen and (min-width: 620px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_next-lessons\.scss}line{font-family:\0000322}}
+  .next-lessons::before, .next-lessons::after {
+    display: inline-block;
+  }
+}
+@media only screen and (min-width: 620px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_next-lessons\.scss}line{font-family:\0000333}}
+  .next-lessons::before {
+    content: attr(data-current-lesson);
+    font-family: "Roboto Condensed", Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+    background: rgba(0, 0, 0, 0.87);
+    display: inline-block;
+    padding: 5px 7px;
+    right: 127px;
+    top: 143px;
+    z-index: 1;
+    color: rgba(255, 255, 255, 0.5);
+  }
+}
+@media only screen and (min-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_next-lessons\.scss}line{font-family:\0000333}}
+  .next-lessons::before {
+    font-size: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    top: 126px;
+    right: 230px;
+  }
+}
+@media only screen and (min-width: 620px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_next-lessons\.scss}line{font-family:\0000363}}
+  .next-lessons::after {
+    content: "";
+    font-family: "icons";
+    font-size: 150px;
+    right: 40px;
+    top: 185px;
+  }
+}
+@media only screen and (min-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_modules\/_next-lessons\.scss}line{font-family:\0000363}}
+  .next-lessons::after {
+    font-size: 210px;
+    right: 120px;
+  }
+}
+
+/**
+*
+* Grid
+*
+**/
+@media only screen and (min-width: 620px) and (max-width: 799px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_grid\.scss}line{font-family:\0000311}}
+  .g-medium--1 {
+    float: left;
+    margin-right: 4.5%;
+    width: 30.3%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_grid\.scss}line{font-family:\0000318}}
+  .g-medium--push-1 {
+    margin-left: 34.8%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_grid\.scss}line{font-family:\0000321}}
+  .g-medium--pull-1 {
+    margin-right: 34.8%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_grid\.scss}line{font-family:\0000311}}
+  .g-medium--2 {
+    float: left;
+    margin-right: 4.5%;
+    width: 65.1%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_grid\.scss}line{font-family:\0000318}}
+  .g-medium--push-2 {
+    margin-left: 69.6%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_grid\.scss}line{font-family:\0000321}}
+  .g-medium--pull-2 {
+    margin-right: 69.6%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_grid\.scss}line{font-family:\0000311}}
+  .g-medium--3 {
+    float: left;
+    margin-right: 4.5%;
+    width: 99.9%;
+    margin-right: 0;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_grid\.scss}line{font-family:\0000327}}
+  .g-medium--full {
+    float: left;
+    margin-right: 4.5%;
+    margin-right: 0;
+    width: 100%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_grid\.scss}line{font-family:\0000333}}
+  .g--third {
+    float: left;
+    margin-right: 4.5%;
+    width: 30.3%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_grid\.scss}line{font-family:\0000338}}
+  .g--half,
+  .g-medium--half {
+    float: left;
+    margin-right: 4.5%;
+    width: 47.75%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_grid\.scss}line{font-family:\0000344}}
+  .g-medium--last {
+    margin-right: 0;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_grid\.scss}line{font-family:\0000345}}
+  .g-medium--last + .g-medium--half {
+    clear: left;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_grid\.scss}line{font-family:\0000347}}
+  .g--pull-half {
+    margin-right: 52.25%;
+  }
+}
+@media only screen and (min-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_grid\.scss}line{font-family:\0000354}}
+  .g-wide--1 {
+    float: left;
+    margin-right: 3.7%;
+    width: 22.2%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_grid\.scss}line{font-family:\0000361}}
+  .g-wide--push-1 {
+    margin-left: 25.9%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_grid\.scss}line{font-family:\0000364}}
+  .g-wide--pull-1 {
+    margin-right: 25.9%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_grid\.scss}line{font-family:\0000354}}
+  .g-wide--2 {
+    float: left;
+    margin-right: 3.7%;
+    width: 48.1%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_grid\.scss}line{font-family:\0000361}}
+  .g-wide--push-2 {
+    margin-left: 51.8%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_grid\.scss}line{font-family:\0000364}}
+  .g-wide--pull-2 {
+    margin-right: 51.8%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_grid\.scss}line{font-family:\0000354}}
+  .g-wide--3 {
+    float: left;
+    margin-right: 3.7%;
+    width: 74%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_grid\.scss}line{font-family:\0000361}}
+  .g-wide--push-3 {
+    margin-left: 77.7%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_grid\.scss}line{font-family:\0000364}}
+  .g-wide--pull-3 {
+    margin-right: 77.7%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_grid\.scss}line{font-family:\0000354}}
+  .g-wide--4 {
+    float: left;
+    margin-right: 3.7%;
+    width: 99.9%;
+    margin-right: 0;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_grid\.scss}line{font-family:\0000370}}
+  .g-wide--last {
+    margin-right: 0;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_grid\.scss}line{font-family:\0000372}}
+  .g-wide--full {
+    float: left;
+    margin-right: 3.7%;
+    margin-right: 0;
+    width: 100%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_grid\.scss}line{font-family:\0000378}}
+  .g--third {
+    float: left;
+    margin-right: 3.7%;
+    width: 30.8%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_grid\.scss}line{font-family:\0000383}}
+  .g--half,
+  .g-wide--half {
+    float: left;
+    margin-right: 3.7%;
+    width: 48.15%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_grid\.scss}line{font-family:\0000389}}
+  .g--pull-half {
+    margin-right: 51.85%;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_grid\.scss}line{font-family:\0000399}}
+.g--last {
+  margin-right: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_grid\.scss}line{font-family:\00003103}}
+.g--centered {
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_grid\.scss}line{font-family:\00003112}}
+.grid-overlay {
+  display: none;
+  pointer-events: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_grid\.scss}line{font-family:\00003118}}
+.debug .grid-overlay {
+  box-sizing: content-box;
+  position: relative;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  display: block;
+}
+@media only screen and (min-width: 620px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_grid\.scss}line{font-family:\00003118}}
+  .debug .grid-overlay {
+    padding-left: 4.8%;
+    padding-right: 4.8%;
+    max-width: 688px;
+  }
+}
+@media only screen and (min-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_grid\.scss}line{font-family:\00003118}}
+  .debug .grid-overlay {
+    padding-left: 4.4%;
+    padding-right: 4.4%;
+    max-width: 864px;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_grid\.scss}line{font-family:\00003129}}
+.debug .grid-overlay [class*="g-"] {
+  height: 100%;
+  background-color: rgba(89, 89, 89, 0.2);
+}
+@media only screen and (min-width: 620px) and (max-width: 799px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_grid\.scss}line{font-family:\00003135}}
+  .debug .grid-overlay .g-wide--last {
+    display: none;
+  }
+}
+@media only screen and (max-width: 619px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_grid\.scss}line{font-family:\00003118}}
+  .debug .grid-overlay {
+    display: none;
+  }
+}
+
+/**
+*
+* Typography
+*
+**/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_typography\.scss}line{font-family:\000039}}
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_typography\.scss}line{font-family:\0000314}}
+.small,
+small {
+  font-size: 13px;
+  line-height: 2.0000em;
+  /* 26px */
+  padding-top: 2.0000em;
+  padding-bottom: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_typography\.scss}line{font-family:\0000319}}
+.base,
+p,
+ul,
+ol {
+  font-size: 16px;
+  line-height: 1.6250em;
+  /* 26px */
+  padding-top: 1.6250em;
+  padding-bottom: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_typography\.scss}line{font-family:\0000326}}
+.medium,
+h4 {
+  font-size: 16px;
+  line-height: 1.6250em;
+  /* 26px */
+  padding-top: 1.6250em;
+  padding-bottom: 0;
+}
+@media only screen and (min-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_typography\.scss}line{font-family:\0000326}}
+  .medium,
+  h4 {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.3000em;
+    /* 26px */
+    padding-top: 1.3000em;
+    padding-bottom: 0;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_typography\.scss}line{font-family:\0000331}}
+.large,
+h3 {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.3000em;
+  /* 26px */
+  padding-top: 1.3000em;
+  padding-bottom: 0;
+}
+@media only screen and (min-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_typography\.scss}line{font-family:\0000331}}
+  .large,
+  h3 {
+    font-family: "Roboto Condensed", Helvetica, sans-serif;
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 1.0000em;
+    /* 26px */
+    padding-top: 1.0000em;
+    padding-bottom: 0;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_typography\.scss}line{font-family:\0000335}}
+.xlarge,
+h2 {
+  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 1.0000em;
+  /* 26px */
+  padding-top: 1.0000em;
+  padding-bottom: 0;
+}
+@media only screen and (min-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_typography\.scss}line{font-family:\0000335}}
+  .xlarge,
+  h2 {
+    font-family: "Roboto Condensed", Helvetica, sans-serif;
+    font-size: 42px;
+    font-weight: 300;
+    line-height: 1.2381em;
+    /* 52px */
+    padding-top: 0.6190em;
+    padding-bottom: 0;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_typography\.scss}line{font-family:\0000340}}
+.xxlarge,
+h1 {
+  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  font-size: 42px;
+  font-weight: 300;
+  line-height: 1.2381em;
+  /* 52px */
+  padding-top: 0.6190em;
+  padding-bottom: 0;
+}
+@media only screen and (min-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_typography\.scss}line{font-family:\0000340}}
+  .xxlarge,
+  h1 {
+    font-family: "Roboto Condensed", Helvetica, sans-serif;
+    font-size: 68px;
+    font-weight: 300;
+    line-height: 1.1471em;
+    /* 78px */
+    padding-top: 0.3824em;
+    padding-bottom: 0;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_typography\.scss}line{font-family:\0000345}}
+.huge {
+  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  font-size: 68px;
+  font-weight: 300;
+  line-height: 1.1471em;
+  /* 78px */
+  padding-top: 0.3824em;
+  padding-bottom: 0;
+}
+@media only screen and (min-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_typography\.scss}line{font-family:\0000345}}
+  .huge {
+    font-family: "Roboto Condensed", Helvetica, sans-serif;
+    font-size: 110px;
+    font-weight: 300;
+    line-height: 1.19em;
+    /* 130px */
+    padding-top: 0.2364em;
+    padding-bottom: 0;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_typography\.scss}line{font-family:\0000350}}
+li > p {
+  padding-top: 0;
+}
+
+/**
+*
+* Button
+*
+**/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_button\.scss}line{font-family:\000037}}
+.button, .button--primary, .button--secondary, .button--secondary-variation {
+  display: inline-block;
+  padding: 12px 32px;
+  margin-bottom: 13px;
+  margin-top: 13px;
+  min-height: 26px;
+  text-align: center;
+  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  outline: 0;
+  transition: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_button\.scss}line{font-family:\0000324}}
+.button:hover, .button--primary:hover, .button--secondary:hover, .button--secondary-variation:hover {
+  background: #4d4d4d;
+  color: #ffffff;
+  border: 1px solid #4d4d4d;
+  text-decoration: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_button\.scss}line{font-family:\0000343}}
+.button--primary {
+  background: #4285f4;
+  color: #ffffff;
+  border: 1px solid #1266f1;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_button\.scss}line{font-family:\0000348}}
+.button--secondary {
+  background: #ffffff;
+  color: #3372df;
+  border: 1px solid #e6e6e6;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_button\.scss}line{font-family:\0000353}}
+.button--secondary-variation {
+  background: #ffffff;
+  color: #3372df;
+  border: 1px solid #e6e6e6;
+  border-color: transparent;
+}
+
+/**
+*
+* List
+*
+**/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_list\.scss}line{font-family:\000037}}
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+}
+@media only screen and (max-width: 619px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_list\.scss}line{font-family:\000037}}
+  ul,
+  ol {
+    padding-left: 0;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_list\.scss}line{font-family:\0000317}}
+ul li {
+  position: relative;
+  padding-left: 16px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_utils\.scss}line{font-family:\00003309}}
+ul li::before {
+  font-family: "icons";
+  font-size: 13px;
+  display: block;
+  font-weight: 400;
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 26px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_list\.scss}line{font-family:\0000322}}
+ul li::before {
+  font-size: 4px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_list\.scss}line{font-family:\0000327}}
+ol {
+  counter-reset: list;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_list\.scss}line{font-family:\0000329}}
+ol > li {
+  position: relative;
+  padding-left: 32px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_utils\.scss}line{font-family:\00003331}}
+ol > li::before {
+  counter-increment: list;
+  content: "0" counter(list);
+  color: inherit;
+  font-weight: 400;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_list\.scss}line{font-family:\0000337}}
+ol > li:nth-child(10n) ~ li::before, ol > li:nth-child(10n)::before {
+  content: counter(list);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_list\.scss}line{font-family:\0000345}}
+ul ol,
+ol ul {
+  padding-top: 0;
+}
+
+/*==========  LIST LINKS  ==========*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_list\.scss}line{font-family:\0000354}}
+ul.list-links li::before {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_list\.scss}line{font-family:\0000357}}
+ul.list-links a {
+  font-weight: 400;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_utils\.scss}line{font-family:\00003309}}
+ul.list-links a::before {
+  font-family: "icons";
+  font-size: 13px;
+  display: block;
+  font-weight: 400;
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 26px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_list\.scss}line{font-family:\0000360}}
+ul.list-links a::before {
+  font-size: 4px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_list\.scss}line{font-family:\0000368}}
+ul.list-links.list-links--primary a {
+  font-weight: 400;
+  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  line-height: 1;
+  text-decoration: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_utils\.scss}line{font-family:\00003309}}
+ul.list-links.list-links--primary a::before {
+  font-family: "icons";
+  font-size: 13px;
+  display: block;
+  font-weight: 400;
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 26px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_list\.scss}line{font-family:\0000380}}
+ol.list-links li::before {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_list\.scss}line{font-family:\0000384}}
+ol.list-links li a {
+  display: inline-block;
+  font-weight: 300;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_utils\.scss}line{font-family:\00003331}}
+ol.list-links li a::before {
+  counter-increment: list;
+  content: "0" counter(list);
+  color: inherit;
+  font-weight: 400;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_list\.scss}line{font-family:\0000390}}
+ol.list-links li:nth-child(10n) ~ li a::before, ol.list-links li:nth-child(10n) a::before {
+  content: counter(list);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_list\.scss}line{font-family:\0000397}}
+ol.list-links.list-links--secondary a::before {
+  display: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_list\.scss}line{font-family:\00003103}}
+.list-links--secondary {
+  font-size: 16px;
+  line-height: 1.6250em;
+  /* 26px */
+  padding-top: 1.6250em;
+  padding-bottom: 0;
+  padding-left: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_list\.scss}line{font-family:\00003107}}
+.list-links--secondary li {
+  padding-left: 0;
+}
+
+/*==========  ANCHOR LIST  ==========*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_list\.scss}line{font-family:\00003114}}
+.list-anchor {
+  padding-left: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_list\.scss}line{font-family:\00003117}}
+.list-anchor li {
+  font-size: 16px;
+  line-height: 1.6250em;
+  /* 26px */
+  padding-top: 1.6250em;
+  padding-bottom: 0;
+  padding-top: 0;
+  padding-left: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_list\.scss}line{font-family:\00003122}}
+.list-anchor li::before {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_list\.scss}line{font-family:\00003128}}
+.list-anchor a {
+  line-height: 1;
+  display: inline-block;
+  padding-left: 16px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_utils\.scss}line{font-family:\00003309}}
+.list-anchor a::before {
+  font-family: "icons";
+  font-size: 13px;
+  display: block;
+  font-weight: 400;
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 26px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_list\.scss}line{font-family:\00003134}}
+.list-anchor a::before {
+  font-size: 4px;
+}
+
+/*==========  SMALL LIST  ==========*/
+@media only screen and (min-width: 620px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_list\.scss}line{font-family:\00003144}}
+  .list-small li {
+    font-size: 13px;
+    line-height: 2.0000em;
+    /* 26px */
+    padding-top: 2.0000em;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+}
+
+/*==========  CENTERED LIST  ==========*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_list\.scss}line{font-family:\00003154}}
+.list-centered {
+  text-align: center;
+  padding-left: 0;
+}
+
+/*==========  FEATURED LIST  ==========*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_list\.scss}line{font-family:\00003161}}
+.featured-list {
+  padding-top: 78px;
+  padding-bottom: 78px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_list\.scss}line{font-family:\00003166}}
+.featured-list__item {
+  background: #ffffff;
+  padding-left: 0;
+  padding-top: 26px;
+  padding-bottom: 26px;
+  margin-top: 26px;
+}
+@media only screen and (min-width: 620px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_list\.scss}line{font-family:\00003166}}
+  .featured-list__item {
+    min-height: 338px;
+    padding: 52px 32px;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_list\.scss}line{font-family:\00003179}}
+.featured-list__item:first-child {
+  margin-top: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_list\.scss}line{font-family:\00003183}}
+.featured-list__item p {
+  margin-bottom: 26px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_list\.scss}line{font-family:\00003188}}
+.featured-list__img-wrapper {
+  display: none;
+  position: relative;
+  padding-top: 26px;
+  margin: 0 -5%;
+}
+@media only screen and (min-width: 620px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_list\.scss}line{font-family:\00003188}}
+  .featured-list__img-wrapper {
+    display: block;
+    padding-top: 0;
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 620px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_list\.scss}line{font-family:\00003201}}
+  .featured-list__img {
+    padding-top: 60.8%;
+    padding-bottom: 0;
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_list\.scss}line{font-family:\00003212}}
+.featured-list__img img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+@media only screen and (min-width: 620px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_list\.scss}line{font-family:\00003212}}
+  .featured-list__img img {
+    margin: 0;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    left: 0;
+  }
+}
+
+/*==========  RELATED GUIDES LIST  ==========*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_list\.scss}line{font-family:\00003229}}
+.related-guides-list {
+  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  padding-top: 0;
+  padding-left: 0;
+}
+@media only screen and (min-width: 620px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_list\.scss}line{font-family:\00003229}}
+  .related-guides-list {
+    padding-top: 26px;
+  }
+}
+@media only screen and (min-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_list\.scss}line{font-family:\00003229}}
+  .related-guides-list {
+    padding-top: 0;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_list\.scss}line{font-family:\00003242}}
+.related-guides-list p {
+  padding-top: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_list\.scss}line{font-family:\00003246}}
+.related-guides-list .tag {
+  padding-top: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_list\.scss}line{font-family:\00003250}}
+.related-guides-list li {
+  padding-top: 26px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e0e0e0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_list\.scss}line{font-family:\00003255}}
+.related-guides-list li:last-child {
+  border-color: transparent;
+}
+@media only screen and (min-width: 620px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_list\.scss}line{font-family:\00003250}}
+  .related-guides-list li {
+    padding-top: 0;
+    padding-bottom: 0;
+    border-color: transparent;
+  }
+}
+
+/*==========  LIST RESET  ==========*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_list\.scss}line{font-family:\00003269}}
+.list--reset {
+  padding-left: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_list\.scss}line{font-family:\00003272}}
+.list--reset li {
+  padding-left: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_list\.scss}line{font-family:\00003276}}
+.list--reset.list-links a::before, .list--reset li::before {
+  display: none !important;
+}
+
+/*==========  LESSONS  ==========*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_list\.scss}line{font-family:\00003284}}
+.list-lessons {
+  padding-left: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_list\.scss}line{font-family:\00003287}}
+.list-lessons a {
+  color: #ffffff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_list\.scss}line{font-family:\00003292}}
+.list-lessons .current,
+.list-lessons .current a {
+  text-decoration: none;
+  cursor: default;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_list\.scss}line{font-family:\00003298}}
+.list-lessons .current .icon {
+  font-size: 13px;
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 100%;
+  width: 26px;
+  line-height: 26px;
+  text-align: center;
+  margin-left: 7px;
+}
+
+/*==========  GUIDES INTO - used on homepage  ==========*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_list\.scss}line{font-family:\00003314}}
+.list-guides-intro {
+  margin-bottom: 52px;
+}
+@media only screen and (max-width: 619px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_list\.scss}line{font-family:\00003314}}
+  .list-guides-intro {
+    padding-top: 52px;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_list\.scss}line{font-family:\00003321}}
+.list-guides-intro li {
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 51px;
+  margin-bottom: 52px;
+}
+@media only screen and (min-width: 620px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_list\.scss}line{font-family:\00003321}}
+  .list-guides-intro li {
+    border-color: transparent;
+    padding-bottom: 0;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_list\.scss}line{font-family:\00003331}}
+.list-guides-intro li:last-child {
+  border-bottom: transparent;
+  margin-bottom: 0;
+}
+
+/**
+*
+* Link
+*
+**/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_link\.scss}line{font-family:\000037}}
+a {
+  color: #3372df;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_link\.scss}line{font-family:\0000311}}
+a:hover {
+  text-decoration: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_link\.scss}line{font-family:\0000315}}
+.cta--primary {
+  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  color: #3372df;
+  font-weight: 400;
+  display: inline-block;
+  line-height: 1;
+  text-decoration: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_utils\.scss}line{font-family:\00003350}}
+.cta--primary:hover {
+  color: rgba(0, 0, 0, 0.87);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_utils\.scss}line{font-family:\00003356}}
+.cta--primary::before {
+  display: inline-block;
+  padding-right: 10px;
+  font-family: "icons";
+  line-height: 25px;
+  font-size: 13px;
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_link\.scss}line{font-family:\0000319}}
+.cta--secondary {
+  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  color: #3372df;
+  font-weight: 400;
+  display: inline-block;
+  line-height: 1;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_utils\.scss}line{font-family:\00003350}}
+.cta--secondary:hover {
+  color: rgba(0, 0, 0, 0.87);
+}
+
+/**
+*
+* Table
+*
+**/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_table\.scss}line{font-family:\000037}}
+table {
+  margin-top: 26px;
+  width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_table\.scss}line{font-family:\0000311}}
+table thead {
+  background: #3372df;
+  color: #ffffff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_table\.scss}line{font-family:\0000316}}
+table th {
+  text-align: center;
+  display: none;
+  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.6250em;
+  /* 26px */
+  padding-top: 1.6250em;
+  padding-bottom: 0;
+}
+@media only screen and (min-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_table\.scss}line{font-family:\0000316}}
+  table th {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.3000em;
+    /* 26px */
+    padding-top: 1.3000em;
+    padding-bottom: 0;
+  }
+}
+@media only screen and (min-width: 620px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_table\.scss}line{font-family:\0000323}}
+  table tr {
+    border-bottom: 1px solid #ffffff;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_table\.scss}line{font-family:\0000329}}
+table tbody {
+  background: #f0f0f0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_table\.scss}line{font-family:\0000333}}
+table td {
+  display: block;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_table\.scss}line{font-family:\0000339}}
+table td::before {
+  content: attr(data-th) " :";
+  display: inline-block;
+  color: #ffffff;
+  background: #3372df;
+  border-right: 2px solid #ffffff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100px;
+  max-height: 100%;
+  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding-left: 13px;
+  padding-top: 13px;
+}
+@media only screen and (min-width: 620px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_table\.scss}line{font-family:\0000339}}
+  table td::before {
+    display: none;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_table\.scss}line{font-family:\0000363}}
+table th,
+table td {
+  position: relative;
+  padding-left: 140px;
+}
+@media only screen and (min-width: 620px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_table\.scss}line{font-family:\0000363}}
+  table th,
+  table td {
+    display: table-cell;
+  }
+}
+@media only screen and (min-width: 620px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_table\.scss}line{font-family:\0000373}}
+  table th {
+    padding: 26px;
+    padding-top: 13px;
+    padding-bottom: 12px;
+  }
+}
+@media only screen and (min-width: 620px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_table\.scss}line{font-family:\0000381}}
+  table td {
+    padding: 26px;
+    padding-bottom: 25px;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_table\.scss}line{font-family:\0000389}}
+td:last-child::after {
+  content: "";
+  display: block;
+  background: #ffffff;
+  height: 1px;
+  left: 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+@media only screen and (min-width: 620px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_table\.scss}line{font-family:\0000389}}
+  td:last-child::after {
+    display: none;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_table\.scss}line{font-family:\00003104}}
+.table-2 col {
+  width: 344px;
+}
+@media only screen and (min-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_table\.scss}line{font-family:\00003104}}
+  .table-2 col {
+    width: 432px;
+  }
+}
+@media only screen and (min-width: 620px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_table\.scss}line{font-family:\00003114}}
+  .table-2 th:first-child,
+  .table-2 td:first-child {
+    border-right: 2px solid #ffffff;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_table\.scss}line{font-family:\00003122}}
+.table-3 col {
+  width: 229.3333333333px;
+}
+@media only screen and (min-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_table\.scss}line{font-family:\00003122}}
+  .table-3 col {
+    width: 288px;
+  }
+}
+@media only screen and (min-width: 620px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_table\.scss}line{font-family:\00003132}}
+  .table-3 th:nth-child(2),
+  .table-3 td:nth-child(2) {
+    border-left: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_table\.scss}line{font-family:\00003141}}
+.table-4 col {
+  width: 172px;
+}
+@media only screen and (min-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_table\.scss}line{font-family:\00003141}}
+  .table-4 col {
+    width: 216px;
+  }
+}
+@media only screen and (min-width: 620px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_table\.scss}line{font-family:\00003151}}
+  .table-4 th:nth-child(2), .table-4 th:nth-child(3),
+  .table-4 td:nth-child(2),
+  .table-4 td:nth-child(3) {
+    border-left: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+  }
+}
+
+/**
+*
+* Media - imgs/videos
+*
+**/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_media\.scss}line{font-family:\000037}}
+img,
+video,
+object {
+  max-width: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_media\.scss}line{font-family:\0000315}}
+.content img {
+  margin-top: 26px;
+  margin-bottom: 26px;
+}
+
+/**
+*
+* Breadcrumb
+*
+**/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_breadcrumb\.scss}line{font-family:\000037}}
+.breadcrumbs {
+  display: none;
+  position: relative;
+  z-index: 1;
+}
+@media only screen and (min-width: 620px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_breadcrumb\.scss}line{font-family:\000037}}
+  .breadcrumbs {
+    display: block;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_breadcrumb\.scss}line{font-family:\0000317}}
+.breadcrumbs p {
+  font-size: 13px;
+  line-height: 2.0000em;
+  /* 26px */
+  padding-top: 2.0000em;
+  padding-bottom: 0;
+  padding-top: 26px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_breadcrumb\.scss}line{font-family:\0000322}}
+.breadcrumbs__link {
+  font-size: 13px;
+  line-height: 2.0000em;
+  /* 26px */
+  padding-top: 2.0000em;
+  padding-bottom: 0;
+  color: black;
+  font-weight: 400;
+  padding-top: 0;
+}
+@media only screen and (min-width: 620px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_breadcrumb\.scss}line{font-family:\0000322}}
+  .breadcrumbs__link {
+    padding-top: 0;
+  }
+}
+
+/**
+*
+* subsection__title
+*
+**/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_subsection-title\.scss}line{font-family:\000037}}
+.subsection-title {
+  color: rgba(0, 0, 0, 0.87);
+  margin-top: 52px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_subsection-title\.scss}line{font-family:\0000312}}
+.subsection-number {
+  font-size: 16px;
+  line-height: 1.6250em;
+  /* 26px */
+  padding-top: 1.6250em;
+  padding-bottom: 0;
+  padding-top: 0;
+  display: block;
+}
+
+/**
+*
+* Articles list
+*
+**/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_articles-list\.scss}line{font-family:\000037}}
+.articles-list {
+  padding-left: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_articles-list\.scss}line{font-family:\0000311}}
+.articles-list__item {
+  padding-bottom: 52px;
+  padding-left: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_articles-list\.scss}line{font-family:\0000315}}
+.articles-list__item:last-child {
+  padding-bottom: 53px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_articles-list\.scss}line{font-family:\0000321}}
+.articles-list__item::before {
+  content: "";
+  display: block;
+  width: 40%;
+  height: 1px;
+  box-shadow: inset 0 1px 0 0 #e0e0e0;
+  margin-right: 0;
+  margin-left: 30%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_articles-list\.scss}line{font-family:\0000332}}
+.articles-list__item h3 a:hover {
+  text-decoration: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_articles-list\.scss}line{font-family:\0000337}}
+.articles-list__item p {
+  margin-top: 26px;
+  margin-bottom: 26px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_articles-list\.scss}line{font-family:\0000342}}
+.articles-list__item:first-child {
+  padding-top: 0;
+}
+@media only screen and (min-width: 620px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_articles-list\.scss}line{font-family:\0000342}}
+  .articles-list__item:first-child {
+    padding-top: 24px;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_articles-list\.scss}line{font-family:\0000349}}
+.articles-list__item:first-child::before {
+  display: none;
+}
+
+/**
+*
+* Guides List
+*
+**/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_guides-list\.scss}line{font-family:\000038}}
+.guides-list {
+  overflow: hidden;
+}
+@media only screen and (min-width: 620px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_guides-list\.scss}line{font-family:\000038}}
+  .guides-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 52px;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_guides-list\.scss}line{font-family:\0000320}}
+.guides-list__item {
+  padding: 0;
+  background: #ffffff;
+  margin-top: 26px;
+  margin-bottom: 0;
+}
+@media only screen and (min-width: 620px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_guides-list\.scss}line{font-family:\0000320}}
+  .guides-list__item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_guides-list\.scss}line{font-family:\0000332}}
+.guides-list__item h3 {
+  margin: 0 32px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_guides-list\.scss}line{font-family:\0000336}}
+.guides-list__item p {
+  margin: 26px 32px 0;
+}
+@media only screen and (min-width: 620px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_guides-list\.scss}line{font-family:\0000340}}
+  .guides-list__item .primary-content {
+    flex: 1;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_guides-list\.scss}line{font-family:\0000346}}
+.guides-list__item .secondary-content {
+  position: relative;
+  margin-top: 51px;
+  border-top: 1px solid #e0e0e0;
+}
+@media only screen and (min-width: 620px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_guides-list\.scss}line{font-family:\0000346}}
+  .guides-list__item .secondary-content {
+    width: 100%;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_guides-list\.scss}line{font-family:\0000356}}
+.guides-list__item .secondary-content .icon-circle {
+  position: absolute;
+  top: -28px;
+  left: 50%;
+  margin-left: -21px;
+  border: 2px solid #ffffff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_guides-list\.scss}line{font-family:\0000363}}
+.guides-list__item .secondary-content .icon-circle i {
+  font-size: 23px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_guides-list\.scss}line{font-family:\0000369}}
+.guides-list__item ol {
+  margin: 26px 0 0;
+  padding: 52px 0 52px;
+  margin-top: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_guides-list\.scss}line{font-family:\0000375}}
+.guides-list__item::before {
+  display: none;
+}
+
+/**
+*
+* Icon Circle
+*
+**/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_icon-circle\.scss}line{font-family:\000037}}
+.icon-circle,
+.icon-circle--large {
+  height: 0;
+  width: 0;
+  background: rgba(0, 0, 0, 0.54);
+  display: block;
+  position: relative;
+  border-radius: 100%;
+  font-size: 0;
+  padding: 22px;
+  margin: 4px auto;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_icon-circle\.scss}line{font-family:\0000319}}
+.icon-circle i,
+.icon-circle span,
+.icon-circle--large i,
+.icon-circle--large span {
+  position: absolute;
+  line-height: 0px;
+  top: 50%;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  color: #ffffff;
+  font-size: 26px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_icon-circle\.scss}line{font-family:\0000331}}
+.icon-circle span,
+.icon-circle--large span {
+  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+}
+@media only screen and (min-width: 620px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_icon-circle\.scss}line{font-family:\0000331}}
+  .icon-circle span,
+  .icon-circle--large span {
+    font-size: 42px;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_icon-circle\.scss}line{font-family:\0000342}}
+.icon-circle--large {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 26px;
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_icon-circle\.scss}line{font-family:\0000348}}
+.icon-circle--large i {
+  font-size: 26px;
+}
+@media only screen and (min-width: 620px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_icon-circle\.scss}line{font-family:\0000348}}
+  .icon-circle--large i {
+    font-size: 42px;
+  }
+}
+@media only screen and (min-width: 620px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_icon-circle\.scss}line{font-family:\0000342}}
+  .icon-circle--large {
+    padding: 37px;
+    border: 2px solid #ffffff;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_icon-circle\.scss}line{font-family:\0000360}}
+  a .icon-circle--large {
+    padding: 38px;
+    box-shadow: inset 0px 0px 0px 1px rgba(255, 255, 255, 0.42);
+    border: 1px solid;
+    transition: all 100ms linear;
+    transform: translateZ(0);
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_icon-circle\.scss}line{font-family:\0000371}}
+  .no-touch a:hover .icon-circle--large {
+    box-shadow: inset 0px 0px 0px 1px #ffffff;
+    transform: scale(1.1);
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_icon-circle\.scss}line{font-family:\0000379}}
+.icon-circle--nav {
+  height: 0;
+  width: 0;
+  background: rgba(0, 0, 0, 0.54);
+  display: block;
+  position: relative;
+  border-radius: 100%;
+  font-size: 0;
+  padding: 13px;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 620px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_icon-circle\.scss}line{font-family:\0000379}}
+  .icon-circle--nav {
+    padding: 22px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_icon-circle\.scss}line{font-family:\0000396}}
+.icon-circle--nav i {
+  position: absolute;
+  line-height: 1px;
+  top: 50%;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  color: #ffffff;
+  font-size: 16px;
+}
+@media only screen and (min-width: 620px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_components\/_icon-circle\.scss}line{font-family:\0000396}}
+  .icon-circle--nav i {
+    font-size: 26px;
+  }
+}
+
+/**
+*
+* Themed styles
+*
+**/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_themed\.scss}line{font-family:\000039}}
+.theme--multi-device-layouts .themed {
+  color: #297ea9;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_themed\.scss}line{font-family:\0000311}}
+.theme--introduction-to-media .themed {
+  color: #cf423a;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_themed\.scss}line{font-family:\0000313}}
+.theme--user-input .themed {
+  color: #2c8566;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_themed\.scss}line{font-family:\0000315}}
+.theme--performance .themed {
+  color: #7b5294;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_themed\.scss}line{font-family:\0000321}}
+.theme--multi-device-layouts .themed--background, .theme--multi-device-layouts .themed--background.next-lessons::before {
+  background-color: #297ea9;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_themed\.scss}line{font-family:\0000324}}
+.theme--introduction-to-media .themed--background, .theme--introduction-to-media .themed--background.next-lessons::before {
+  background-color: #cf423a;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_themed\.scss}line{font-family:\0000327}}
+.theme--user-input .themed--background, .theme--user-input .themed--background.next-lessons::before {
+  background-color: #2c8566;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_themed\.scss}line{font-family:\0000330}}
+.theme--performance .themed--background, .theme--performance .themed--background.next-lessons::before {
+  background-color: #7b5294;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_themed\.scss}line{font-family:\0000337}}
+.theme--multi-device-layouts .themed--hover:hover {
+  color: #297ea9;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_themed\.scss}line{font-family:\0000339}}
+.theme--introduction-to-media .themed--hover:hover {
+  color: #cf423a;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_themed\.scss}line{font-family:\0000341}}
+.theme--user-input .themed--hover:hover {
+  color: #2c8566;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_themed\.scss}line{font-family:\0000343}}
+.theme--performance .themed--hover:hover {
+  color: #7b5294;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_themed\.scss}line{font-family:\0000349}}
+.theme--multi-device-layouts .themed--hover-secondary:hover {
+  color: #89c4e2;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_themed\.scss}line{font-family:\0000351}}
+.theme--introduction-to-media .themed--hover-secondary:hover {
+  color: #edb8b5;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_themed\.scss}line{font-family:\0000353}}
+.theme--user-input .themed--hover-secondary:hover {
+  color: #78d2b3;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_themed\.scss}line{font-family:\0000355}}
+.theme--performance .themed--hover-secondary:hover {
+  color: #c4add2;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_themed\.scss}line{font-family:\0000366}}
+.article--multi-device-layouts .article-container h1, .article--multi-device-layouts
+.article-container h2 {
+  color: #297ea9;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_themed\.scss}line{font-family:\0000368}}
+.article--introduction-to-media .article-container h1, .article--introduction-to-media
+.article-container h2 {
+  color: #cf423a;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_themed\.scss}line{font-family:\0000370}}
+.article--user-input .article-container h1, .article--user-input
+.article-container h2 {
+  color: #2c8566;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_themed\.scss}line{font-family:\0000372}}
+.article--performance .article-container h1, .article--performance
+.article-container h2 {
+  color: #7b5294;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_themed\.scss}line{font-family:\0000380}}
+.nav-theme--multi-device-layouts .themed--hover:hover {
+  color: #297ea9;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_themed\.scss}line{font-family:\0000382}}
+.nav-theme--introduction-to-media .themed--hover:hover {
+  color: #cf423a;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_themed\.scss}line{font-family:\0000384}}
+.nav-theme--user-input .themed--hover:hover {
+  color: #2c8566;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_themed\.scss}line{font-family:\0000386}}
+.nav-theme--performance .themed--hover:hover {
+  color: #7b5294;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_themed\.scss}line{font-family:\0000392}}
+.nav-theme--multi-device-layouts .themed {
+  color: #297ea9;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_themed\.scss}line{font-family:\0000394}}
+.nav-theme--introduction-to-media .themed {
+  color: #cf423a;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_themed\.scss}line{font-family:\0000396}}
+.nav-theme--user-input .themed {
+  color: #2c8566;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_themed\.scss}line{font-family:\0000398}}
+.nav-theme--performance .themed {
+  color: #7b5294;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_themed\.scss}line{font-family:\00003104}}
+.nav-theme--multi-device-layouts .themed--background {
+  background-color: #297ea9;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_themed\.scss}line{font-family:\00003106}}
+.nav-theme--introduction-to-media .themed--background {
+  background-color: #cf423a;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_themed\.scss}line{font-family:\00003108}}
+.nav-theme--user-input .themed--background {
+  background-color: #2c8566;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_themed\.scss}line{font-family:\00003110}}
+.nav-theme--performance .themed--background {
+  background-color: #7b5294;
+}
+
+/**
+*
+* Styleguide
+*
+**/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_pages\/_styleguide\.scss}line{font-family:\000039}}
+.page--styleguide .styleguide__module-title {
+  margin-bottom: 26px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_pages\/_styleguide\.scss}line{font-family:\0000313}}
+.page--styleguide section {
+  margin-bottom: 52px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 77px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_pages\/_styleguide\.scss}line{font-family:\0000320}}
+.page--styleguide .styleguide__color-list {
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_pages\/_styleguide\.scss}line{font-family:\0000323}}
+.page--styleguide .styleguide__color-list li {
+  border-bottom: 52px solid;
+  margin-bottom: 26px;
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_pages\/_styleguide\.scss}line{font-family:\0000330}}
+.page--styleguide .styleguide__breadcrumb .breadcrumbs {
+  display: block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_pages\/_styleguide\.scss}line{font-family:\0000335}}
+.page--styleguide .styleguide__lists ul,
+.page--styleguide .styleguide__lists ol {
+  margin-bottom: 26px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_pages\/_styleguide\.scss}line{font-family:\0000341}}
+.page--styleguide .styleguide__inverted-block {
+  background: #e8e8e8;
+  padding: 0 13px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_pages\/_styleguide\.scss}line{font-family:\0000346}}
+.page--styleguide .styleguide__theme-block {
+  background: #297ea9;
+  padding: 0 13px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_pages\/_styleguide\.scss}line{font-family:\0000353}}
+.demo {
+  margin-bottom: 26px;
+  margin-top: 26px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_pages\/_styleguide\.scss}line{font-family:\0000359}}
+.demo [class*="g-"] {
+  background-color: rgba(0, 0, 0, 0.26);
+  position: relative;
+  margin-bottom: 26px;
+  min-height: 156px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_pages\/_styleguide\.scss}line{font-family:\0000365}}
+.demo [class*="g-"]::before, .demo [class*="g-"]::after {
+  font-size: 13px;
+  line-height: 2.0000em;
+  /* 26px */
+  padding-top: 2.0000em;
+  padding-bottom: 0;
+  display: block;
+  margin: 0 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_pages\/_styleguide\.scss}line{font-family:\0000372}}
+.demo [class*="g-"]::before {
+  content: 'HTML classes: ';
+  font-weight: 700;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_pages\/_styleguide\.scss}line{font-family:\0000377}}
+.demo [class*="g-"]::after {
+  content: attr(class);
+  word-spacing: 15px;
+}
+
+/**
+*
+* Resources page
+*
+**/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_pages\/_page-resources\.scss}line{font-family:\000038}}
+.page--resources .article-section__icon, .page--resources .articles-count, .page--resources .guides-list__item .secondary-content {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_pages\/_page-resources\.scss}line{font-family:\0000314}}
+.page--resources .primary-content {
+  padding-top: 26px;
+  padding-bottom: 52px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_pages\/_page-resources\.scss}line{font-family:\0000318}}
+.page--resources .primary-content p {
+  margin-top: 0;
+}
+
+/**
+*
+* Helper
+*
+**/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_helper\.scss}line{font-family:\000039}}
+.clear::before, .clear::after {
+  content: '';
+  display: table;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_helper\.scss}line{font-family:\0000314}}
+.clear::after {
+  clear: both;
+}
+
+/*==========  COLORS  ==========*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_helper\.scss}line{font-family:\0000322}}
+.color--blue {
+  color: #3372df;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_helper\.scss}line{font-family:\0000323}}
+.color--red {
+  color: #cb4437;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_helper\.scss}line{font-family:\0000324}}
+.color--green {
+  color: #0f9d58;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_helper\.scss}line{font-family:\0000325}}
+.color--yellow {
+  color: #f4b400;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_helper\.scss}line{font-family:\0000326}}
+.color--blue-secondary {
+  color: #b7cdf4;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_helper\.scss}line{font-family:\0000327}}
+.color--red-secondary {
+  color: #ebb6b0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_helper\.scss}line{font-family:\0000328}}
+.color--green-secondary {
+  color: #56efa5;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_helper\.scss}line{font-family:\0000329}}
+.color--yellow-secondary {
+  color: #ffd45b;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_helper\.scss}line{font-family:\0000331}}
+.color--gray-background {
+  color: #f0f0f0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_helper\.scss}line{font-family:\0000332}}
+.color--gray-keyline {
+  color: #e0e0e0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_helper\.scss}line{font-family:\0000333}}
+.color--gray {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_helper\.scss}line{font-family:\0000334}}
+.color--gray-dark {
+  color: rgba(0, 0, 0, 0.87);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_helper\.scss}line{font-family:\0000336}}
+.color--text {
+  color: #404040;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_helper\.scss}line{font-family:\0000337}}
+.color--highlight {
+  color: #3372df;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_helper\.scss}line{font-family:\0000338}}
+.color--warning {
+  color: #ffd45b;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_helper\.scss}line{font-family:\0000339}}
+.color--danger {
+  color: #cb4437;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_helper\.scss}line{font-family:\0000340}}
+.color--muted {
+  color: #737373;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_helper\.scss}line{font-family:\0000342}}
+.color--remember {
+  color: #09829a;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_helper\.scss}line{font-family:\0000343}}
+.color--learning {
+  color: #da2e75;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_helper\.scss}line{font-family:\0000345}}
+.color--layouts {
+  color: #297ea9;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_helper\.scss}line{font-family:\0000346}}
+.color--user {
+  color: #2c8566;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_helper\.scss}line{font-family:\0000347}}
+.color--media {
+  color: #cf423a;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_helper\.scss}line{font-family:\0000348}}
+.color--performance {
+  color: #7b5294;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_helper\.scss}line{font-family:\0000349}}
+.color--layouts-secondary {
+  color: #89c4e2;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_helper\.scss}line{font-family:\0000350}}
+.color--user-secondary {
+  color: #78d2b3;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_helper\.scss}line{font-family:\0000351}}
+.color--media-secondary {
+  color: #edb8b5;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_helper\.scss}line{font-family:\0000352}}
+.color--performance-secondary {
+  color: #c4add2;
+}
+
+/*==========  TEXT DIVIDER  ==========*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_helper\.scss}line{font-family:\0000358}}
+.text-divider {
+  position: relative;
+  margin-bottom: 26px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_helper\.scss}line{font-family:\0000362}}
+.text-divider::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 40%;
+  height: 1px;
+  box-shadow: 0 1px 0 0 #e0e0e0;
+  left: 30%;
+  bottom: -13px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_helper\.scss}line{font-family:\0000373}}
+.text-divider.xlarge {
+  margin-bottom: 52px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_helper\.scss}line{font-family:\0000376}}
+.text-divider.xlarge::after {
+  bottom: -26px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_helper\.scss}line{font-family:\0000381}}
+.text-divider.xxlarge {
+  margin-bottom: 78px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_helper\.scss}line{font-family:\0000384}}
+.text-divider.xxlarge::after {
+  bottom: -39px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_helper\.scss}line{font-family:\0000389}}
+.text-divider.huge {
+  margin-bottom: 78px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_helper\.scss}line{font-family:\0000392}}
+.text-divider.huge::after {
+  bottom: -39px;
+}
+
+/*==========  GENERIC  ==========*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_helper\.scss}line{font-family:\00003100}}
+.centered {
+  text-align: center;
+}
+
+/*==========  TAG  ==========*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_helper\.scss}line{font-family:\00003106}}
+.tag {
+  font-size: 13px;
+  line-height: 2.0000em;
+  /* 26px */
+  padding-top: 2.0000em;
+  padding-bottom: 0;
+  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  text-decoration: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_helper\.scss}line{font-family:\00003114}}
+.tag:hover {
+  color: rgba(0, 0, 0, 0.87);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/components\/_helper\.scss}line{font-family:\00003118}}
+.tag::before {
+  content: '# ';
+  display: inline-block;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/main\.scss}line{font-family:\0000317}}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/main\.scss}line{font-family:\0000325}}
+body {
+  position: relative;
+  font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  background-color: #fff;
+  box-sizing: border-box;
+  min-height: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/main\.scss}line{font-family:\0000334}}
+.backface {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/main\.scss}line{font-family:\0000340}}
+main {
+  margin: 0 auto;
+  /* Height of the header */
+  padding: 60px 16px 16px 16px;
+  min-height: 100%;
+}
+
+/** Larger Screens - desktops and tablets **/
+@media all and (min-width: 990px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/main\.scss}line{font-family:\0000349}}
+  main {
+    max-width: 864px;
+    padding-top: 0;
+    min-height: initial;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/main\.scss}line{font-family:\0000355}}
+  body {
+    overflow-y: scroll;
+  }
+}
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 300;
+  src: url(/fonts/RobotoCondensed-Light.eot);
+  src: local("Roboto Condensed Light"), local("RobotoCondensed-Light"), url(/fonts/RobotoCondensed-Light.eot) format("embedded-opentype"), url(/fonts/RobotoCondensed-Light.woff) format("woff");
+}
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  src: url(/fonts/RobotoCondensed-Regular.eot);
+  src: local("Roboto Condensed Regular"), local("RobotoCondensed-Regular"), url(/fonts/RobotoCondensed-Regular.eot) format("embedded-opentype"), url(/fonts/RobotoCondensed-Regular.woff) format("woff");
+}
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 700;
+  src: url(/fonts/RobotoCondensed-Bold.eot);
+  src: local("Roboto Condensed Regular"), local("RobotoCondensed-Bold"), url(/fonts/RobotoCondensed-Bold.eot) format("embedded-opentype"), url(/fonts/RobotoCondensed-Bold.woff) format("woff");
+}
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: italic;
+  font-weight: 300;
+  src: url(/fonts/RobotoCondensed-LightItalic.eot);
+  src: local("Roboto Condensed Light Italic"), local("RobotoCondensed-LightItalic"), url(/fonts/RobotoCondensed-LightItalic.eot) format("embedded-opentype"), url(/fonts/RobotoCondensed-LightItalic.woff) format("woff");
+}
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: italic;
+  font-weight: 400;
+  src: url(/fonts/RobotoCondensed-Italic.eot);
+  src: local("Roboto Condensed Italic"), local("RobotoCondensed-Italic"), url(/fonts/RobotoCondensed-Italic.eot) format("embedded-opentype"), url(/fonts/RobotoCondensed-Italic.woff) format("woff");
+}
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: italic;
+  font-weight: 700;
+  src: url(/fonts/RobotoCondensed-BoldItalic.eot);
+  src: local("Roboto Condensed Bold Italic"), local("RobotoCondensed-BoldItalic"), url(/fonts/RobotoCondensed-BoldItalic.eot) format("embedded-opentype"), url(/fonts/RobotoCondensed-BoldItalic.woff) format("woff");
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/grahamh\/Documents\/pixiPalace\/styles\/_app\.scss}line{font-family:\000031}}
+#pixiPalaceCanvas {
+  border: 2px dotted IndianRed !important;
+  width: 100%;
+}
+
+/*# sourceMappingURL=main.css.map */

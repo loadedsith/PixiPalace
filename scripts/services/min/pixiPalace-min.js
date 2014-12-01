@@ -1,0 +1,1 @@
+angular.module("PixiPalace.Pixi",[]).service("PixiPalacePixiService",function(){"use strict";console.log("PixiPalacePixiService Reporting in");var i=this;void 0===PIXI?console.log("PIXI is undefined, have you loaded pixi.js properly?"):(i.pixi=PIXI,i.textures=[],i.objects=[])});
